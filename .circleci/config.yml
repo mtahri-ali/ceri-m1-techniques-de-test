@@ -39,4 +39,4 @@ jobs:
                  filters:
                    branches:
                      only:
-                       - master
+
