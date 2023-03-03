@@ -29,14 +29,13 @@ jobs:
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
-        # Workflows
-        workflows:
-          version: 2.1
-          build:
-            jobs:
-              - build:
-                #Execute only on the branch 'master'
-                filters:
-                  branches:
-                    only:
-                      - master
+workflows:
+ version: 2.1
+ build:
+    jobs:
+        - build:
+      #Execute only on the branch 'master'
+          filters:
+            branches:
+              only:
+                - master
