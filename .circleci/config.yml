@@ -44,3 +44,14 @@ jobs:
 
       # run tests!
       - run: gradle test
+        # Workflows
+        workflows:
+          version: 2.1
+          build:
+            jobs:
+              - build:
+                #Execute only on the branch 'master'
+                filters:
+                  branches:
+                    only:
+                      - master
