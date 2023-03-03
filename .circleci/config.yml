@@ -31,7 +31,7 @@ jobs:
 
         # Workflows
         workflows :
-          version : 2.1
+          version : 2
           build:
              jobs:
                - build:
