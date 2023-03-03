@@ -33,10 +33,10 @@ jobs:
 workflows:
   version: 2.1
   build:
-   jobs:
+    jobs:
       - build:
         #Execute only on the branch 'master'
-         filters:
+        filters:
           branches:
              only:
-                - master
+               - master
