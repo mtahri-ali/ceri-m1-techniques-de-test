@@ -1,10 +1,10 @@
 package fr.univavignon.pokedex.api;
 
 
+
 import org.junit.Test;
 
 
-import static org.mockito.Mockito.when;
 
 import java.util.List;
 
@@ -16,14 +16,12 @@ public class IPokedexTest {
     IPokedex test;
 
 
+    IPokedex pokedex;
 
 
     @Test
-    public void size() {
-        addPokemon();
-        IPokedex pokedex1 = null;
-        when(test.size()).thenReturn(pokedex1.size());
-        assertEquals(test.size(), 2);
+    void size() {
+        assert(pokedex.size() == 0);
     }
 
     @Test
