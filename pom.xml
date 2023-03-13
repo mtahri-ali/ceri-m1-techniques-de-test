@@ -14,10 +14,7 @@
   </properties>
 
 
-  <build>
-    <sourceDirectory>src/main/java</sourceDirectory>
-    <testSourceDirectory>src/test/java</testSourceDirectory>
-  </build>
+
   <dependencies>
 
     <dependency>
@@ -26,12 +23,6 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
-    <!--
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-collections4</artifactId>
-      <version>4.0</version>
-    </dependency> -->
 
     <dependency>
       <groupId>org.mockito</groupId>
@@ -40,4 +31,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+  </build>
 </project>
