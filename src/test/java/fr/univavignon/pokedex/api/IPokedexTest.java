@@ -1,12 +1,11 @@
 package fr.univavignon.pokedex.api;
 
-import org.junit.Before;
+
 import org.junit.Test;
 
 
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import java.util.ArrayList;
+
 import java.util.List;
 
 
@@ -15,16 +14,9 @@ import static org.junit.Assert.*;
 public class IPokedexTest {
     public static List<Pokemon> pokedex1;
     IPokedex test;
-    IPokemonFactory pokemonFactory1;
-    IPokemonMetadataProvider pokemonMD1;
 
-    @Before
-    public void init() {
-        pokedex1 = new ArrayList<Pokemon>();
-        test = mock(IPokedex.class);
-        pokemonFactory1 = mock(IPokemonFactory.class);
-        pokemonMD1 = mock(IPokemonMetadataProvider.class);
-    }
+
+
 
     @Test
     public void size() {
