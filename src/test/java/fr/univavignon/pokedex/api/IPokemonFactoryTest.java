@@ -21,8 +21,6 @@ public class IPokemonFactoryTest {
     }
 
     @Test
-    @Tag("PokemonFactory")
-    @DisplayName("Creates a pokemon instance computing it IVs")
     public void CreatePokemonTest(){
 
         int bulbizarreIndex = 0, bulbizarreCp = 613, bulbizarreHp = 64, bulbizarreDust = 4000, bulbizarreCandy = 4;
@@ -32,7 +30,6 @@ public class IPokemonFactoryTest {
         Mockito.when(pokemonFactory.createPokemon(bulbizarreIndex, bulbizarreCp, bulbizarreHp, bulbizarreDust, bulbizarreCandy)).thenReturn(bulbizarre);
         Mockito.when(pokemonFactory.createPokemon(aqualiIndex, aqualiCp, aqualiHp, aqualiDust, aqualiCandy)).thenReturn(aquali);
 
-        //use of AssertJ in Junit5
         assertThat(pokemonFactory.createPokemon(bulbizarreIndex, bulbizarreCp, bulbizarreHp, bulbizarreDust, bulbizarreCandy)).isEqualTo(bulbizarre);
         assertThat(pokemonFactory.createPokemon(aqualiIndex, aqualiCp, aqualiHp, aqualiDust, aqualiCandy)).isEqualTo(aquali);
 
